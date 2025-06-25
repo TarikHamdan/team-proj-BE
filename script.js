@@ -122,7 +122,6 @@ saveEdit.addEventListener("click", () => {
 cancelEdit.addEventListener("click", () => {
   editModal.style.display = "none";
 });
-
 confirmDelete.addEventListener("click", () => {
   if (editIndex !== null) {
     tasks.splice(editIndex, 1);
@@ -130,4 +129,13 @@ confirmDelete.addEventListener("click", () => {
     renderTasks();
     deleteModal.style.display = "none";
   }
+});
+cancelDelete.addEventListener("click", () => {
+  deleteModal.style.display = "none";
+});
+deleteDone.addEventListener("click", () => {
+  confirmDoneModal.style.display = "flex";
+});
+deleteAll.addEventListener("click", () => {
+  confirmAllModal.style.display = "flex";
 });
