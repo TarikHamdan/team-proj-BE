@@ -31,7 +31,7 @@ function renderTasks() {
     emptyMsg.className = "empty-message";
     emptyMsg.innerText = "No tasks.";
     taskList.appendChild(emptyMsg);
-  }else {
+    } else {
     filteredTasks.forEach((task, index) => {
       const taskItem = document.createElement("div");
       taskItem.className = "task-item";
@@ -69,6 +69,7 @@ function renderTasks() {
       taskItem.appendChild(actions);
       taskList.appendChild(taskItem);
     });
+    }
 
 
 
