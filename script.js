@@ -35,11 +35,9 @@ function renderTasks() {
     filteredTasks.forEach((task, index) => {
       const taskItem = document.createElement("div");
       taskItem.className = "task-item";
-
       const taskText = document.createElement("div");
       taskText.className = "task-text" + (task.done ? " done" : "");
       taskText.innerText = task.text;
-
       const checkbox = document.createElement("input");
       checkbox.type = "checkbox";
       checkbox.checked = task.done;
