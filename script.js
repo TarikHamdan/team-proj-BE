@@ -47,6 +47,22 @@ function renderTasks() {
         saveTasks();
         renderTasks();
       });
+    const actions = document.createElement("div");
+      actions.className = "task-actions";
+      const editIcon = document.createElement("i");
+      editIcon.className = "fas fa-edit";
+      editIcon.addEventListener("click", () => {
+        editIndex = index;
+        editInput.value = task.text;
+        editModal.style.display = "flex";
+      });
+
+      const deleteIcon = document.createElement("i");
+      deleteIcon.className = "fas fa-trash";
+      deleteIcon.addEventListener("click", () => {
+        editIndex = index;
+        deleteModal.style.display = "flex";
+      });
 
 
 
