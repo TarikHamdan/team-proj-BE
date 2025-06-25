@@ -145,3 +145,12 @@ document.getElementById("confirmDeleteAll").addEventListener("click", () => {
   renderTasks();
   confirmAllModal.style.display = "none";
 });
+document.getElementById("cancelDeleteAll").addEventListener("click", () => {
+  confirmAllModal.style.display = "none";
+});
+document.getElementById("confirmDeleteDone").addEventListener("click", () => {
+  tasks = tasks.filter(task => !task.done);
+  saveTasks();
+  renderTasks();
+  confirmDoneModal.style.display = "none";
+});
