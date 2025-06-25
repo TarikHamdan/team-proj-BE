@@ -18,3 +18,17 @@ const deleteDone = document.getElementById("deleteDone");
 const deleteAll = document.getElementById("deleteAll");
 const confirmAllModal = document.getElementById("confirmAllModal");
 const confirmDoneModal = document.getElementById("confirmDoneModal");
+
+function renderTasks() {
+    taskList.innerHTML = "";
+  const filteredTasks = tasks.filter(task => {
+    if (currentFilter === "all") return true;
+    if (currentFilter === "done") return task.done;
+    if (currentFilter === "todo") return !task.done;
+  });
+
+
+
+
+
+}
