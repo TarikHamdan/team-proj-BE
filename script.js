@@ -119,3 +119,15 @@ saveEdit.addEventListener("click", () => {
     editModal.style.display = "none";
   }
 });
+cancelEdit.addEventListener("click", () => {
+  editModal.style.display = "none";
+});
+
+confirmDelete.addEventListener("click", () => {
+  if (editIndex !== null) {
+    tasks.splice(editIndex, 1);
+    saveTasks();
+    renderTasks();
+    deleteModal.style.display = "none";
+  }
+});
