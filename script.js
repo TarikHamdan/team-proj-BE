@@ -62,7 +62,13 @@ function renderTasks() {
         editIndex = index;
         deleteModal.style.display = "flex";
       });
-
+      actions.appendChild(checkbox);
+      actions.appendChild(editIcon);
+      actions.appendChild(deleteIcon);
+      taskItem.appendChild(taskText);
+      taskItem.appendChild(actions);
+      taskList.appendChild(taskItem);
+    });
 
 
 
