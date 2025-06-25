@@ -11,3 +11,6 @@ const editModal = document.getElementById("editModal");
 const editInput = document.getElementById("editInput");
 const saveEdit = document.getElementById("saveEdit");
 const cancelEdit = document.getElementById("cancelEdit");
+const deleteModal = document.getElementById("deleteModal");
+const confirmDelete = document.getElementById("confirmDelete");
+const cancelDelete = document.getElementById("cancelDelete");
