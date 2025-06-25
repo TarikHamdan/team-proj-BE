@@ -158,5 +158,8 @@ document.getElementById("cancelDeleteDone").addEventListener("click", () => {
   confirmDoneModal.style.display = "none";
 });
 window.addEventListener("click", e => {
-  
+  if (e.target === editModal) editModal.style.display = "none";
+  if (e.target === deleteModal) deleteModal.style.display = "none";
+  if (e.target === confirmAllModal) confirmAllModal.style.display = "none";
+  if (e.target === confirmDoneModal) confirmDoneModal.style.display = "none";
 });
