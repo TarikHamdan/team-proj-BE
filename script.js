@@ -92,3 +92,13 @@ taskInput.addEventListener("input", () => {
     warning.style.display = "none";
   }
 });
+function addTask() {
+  const value = taskInput.value.trim();
+  if (/^\d/.test(value) || value.length < 5) {
+    return;
+  }
+  tasks.push({ text: value, done: false });
+  taskInput.value = "";
+  saveTasks();
+  renderTasks();
+}
