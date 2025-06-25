@@ -163,6 +163,6 @@ window.addEventListener("click", e => {
   if (e.target === confirmAllModal) confirmAllModal.style.display = "none";
   if (e.target === confirmDoneModal) confirmDoneModal.style.display = "none";
 });
-{}{}{}{}
+{}
 
 renderTasks();
