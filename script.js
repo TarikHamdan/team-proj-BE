@@ -102,3 +102,11 @@ function addTask() {
   saveTasks();
   renderTasks();
 }
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    filterButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    currentFilter = btn.getAttribute("data-filter");
+    renderTasks();
+  });
+});
