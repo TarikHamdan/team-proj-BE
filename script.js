@@ -80,3 +80,15 @@ addTaskBtn.addEventListener("click", addTask);
 taskInput.addEventListener("keypress", e => {
   if (e.key === "Enter") addTask();
 });
+taskInput.addEventListener("input", () => {
+  const value = taskInput.value.trim();
+  if (/^\d/.test(value)) {
+    warning.innerText = "Task cannot start with a number";
+    warning.style.display = "block";
+  } else if (value.length > 0 && value.length < 5) {
+    warning.innerText = "Task must be at least 5 characters long";
+    warning.style.display = "block";
+  } else {
+    warning.style.display = "none";
+  }
+});
