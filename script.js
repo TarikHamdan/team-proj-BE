@@ -76,3 +76,7 @@ function renderTasks() {
 function saveTasks() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
+addTaskBtn.addEventListener("click", addTask);
+taskInput.addEventListener("keypress", e => {
+  if (e.key === "Enter") addTask();
+});
