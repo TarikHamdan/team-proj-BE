@@ -177,3 +177,28 @@ body {
   color: #666;
   transition: color 0.2s ease;
 }
+
+
+.task-actions i:hover,
+.task-actions i:focus {
+  color: #000;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.delete-done,
+.delete-all {
+  flex: 1;
+  margin: 0 5px;
+  padding: 12px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
