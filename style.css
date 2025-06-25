@@ -24,3 +24,22 @@ body {
   background-color: #fff;
   max-width: 100%;
 }
+.todo-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.todo-input:focus-within {
+  box-shadow: 0 0 0 2px #007c91;
+  background-color: #e6f7fb;
+}
+#editInput {
+  font-size: 20px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
