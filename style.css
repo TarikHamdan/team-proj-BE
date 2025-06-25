@@ -5,3 +5,7 @@ body {
   min-height: 100vh;
   padding: 40px 10%;
 }
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
