@@ -154,3 +154,9 @@ document.getElementById("confirmDeleteDone").addEventListener("click", () => {
   renderTasks();
   confirmDoneModal.style.display = "none";
 });
+document.getElementById("cancelDeleteDone").addEventListener("click", () => {
+  confirmDoneModal.style.display = "none";
+});
+window.addEventListener("click", e => {
+  
+});
