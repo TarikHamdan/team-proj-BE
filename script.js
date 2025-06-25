@@ -110,3 +110,12 @@ filterButtons.forEach(btn => {
     renderTasks();
   });
 });
+saveEdit.addEventListener("click", () => {
+  const value = editInput.value.trim();
+  if (value.length >= 5 && editIndex !== null) {
+    tasks[editIndex].text = value;
+    saveTasks();
+    renderTasks();
+    editModal.style.display = "none";
+  }
+});
