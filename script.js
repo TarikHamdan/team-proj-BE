@@ -26,6 +26,12 @@ function renderTasks() {
     if (currentFilter === "done") return task.done;
     if (currentFilter === "todo") return !task.done;
   });
+  if (filteredTasks.length === 0) {
+    const emptyMsg = document.createElement("div");
+    emptyMsg.className = "empty-message";
+    emptyMsg.innerText = "No tasks.";
+    taskList.appendChild(emptyMsg);
+  }
 
 
 
