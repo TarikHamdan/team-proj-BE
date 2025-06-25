@@ -234,7 +234,9 @@ body {
 .modal-buttons button {
   margin: 10px 5px;
   padding: 10px 15px;
-  
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .modal-buttons .save {
