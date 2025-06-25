@@ -119,3 +119,20 @@ body {
   max-height: 360px;
   position: relative;
 }
+
+.empty-message {
+  text-align: center;
+  font-size: 1em;
+  color: #555;
+}
+
+.task-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+}
