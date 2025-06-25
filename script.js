@@ -73,3 +73,6 @@ function renderTasks() {
     taskList.style.maxHeight = tasks.length > 6 ? '400px' : 'auto';
     taskList.style.overflowY = tasks.length > 6 ? 'auto' : 'hidden';
 }
+function saveTasks() {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
