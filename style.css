@@ -88,3 +88,15 @@ body {
   justify-content: space-between;
   margin: 15px 0;
 }
+.filter {
+  flex: 1;
+  padding: 10px;
+  background-color: #0099cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 0 5px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  font-size: 1em;
+}
