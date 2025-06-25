@@ -9,3 +9,18 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.6em;
+}
+.todo-input-wrapper {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 100%;
+}
