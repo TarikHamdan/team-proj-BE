@@ -139,3 +139,9 @@ deleteDone.addEventListener("click", () => {
 deleteAll.addEventListener("click", () => {
   confirmAllModal.style.display = "flex";
 });
+document.getElementById("confirmDeleteAll").addEventListener("click", () => {
+  tasks = [];
+  saveTasks();
+  renderTasks();
+  confirmAllModal.style.display = "none";
+});
