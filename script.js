@@ -7,3 +7,7 @@ const addTaskBtn = document.getElementById("addTaskBtn");
 const taskList = document.getElementById("taskList");
 const warning = document.getElementById("warning");
 const filterButtons = document.querySelectorAll(".filter");
+const editModal = document.getElementById("editModal");
+const editInput = document.getElementById("editInput");
+const saveEdit = document.getElementById("saveEdit");
+const cancelEdit = document.getElementById("cancelEdit");
