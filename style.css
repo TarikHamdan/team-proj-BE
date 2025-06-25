@@ -43,3 +43,18 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+.todo-input i {
+  color: #007c91;
+  font-size: 1.2em;
+}
+
+#taskInput {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+
+#taskInput:focus {
+  background-color: transparent;
+}
