@@ -1,9 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  
+  <div class="container">
+    <h2 class="section-title">TodoInput</h2>
+    <div class="todo-input">
+      <i class="fas fa-tasks"></i>
+      <input type="text" id="taskInput" placeholder="New Todo" />
+    </div>
+    <p class="warning" id="warning">Task must be at least 5 characters long</p>
+    <button id="addTaskBtn">Add new task</button>
+
+    <h2 class="section-title">Todo List</h2>
+    <div class="filter-buttons">
+      <button data-filter="all" class="filter active">All</button>
+      <button data-filter="done" class="filter">Done</button>
+      <button data-filter="todo" class="filter">Todo</button>
+    </div>
+
+    <div class="task-list" id="taskList"></div>
+
+    <div class="footer-buttons">
+      <button class="delete-done" id="deleteDone">Delete Done Tasks</button>
+      <button class="delete-all" id="deleteAll">Delete All Tasks</button>
+    </div>
+  </div>
+
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <h3>Rename Task</h3>
+      <input type="text" id="editInput" />
+      <div class="modal-buttons">
+        <button id="saveEdit" class="save">Save</button>
+        <button id="cancelEdit" class="cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
