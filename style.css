@@ -157,3 +157,12 @@ body {
   display: flex;
   align-items: center;
 }
+.task-actions input[type="checkbox"] {
+  margin-right: 10px;
+  order: -1;
+  cursor: pointer;
+  accent-color: #007c91;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  width: 18px;
+  height: 18px;
+}
