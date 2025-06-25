@@ -14,3 +14,7 @@ const cancelEdit = document.getElementById("cancelEdit");
 const deleteModal = document.getElementById("deleteModal");
 const confirmDelete = document.getElementById("confirmDelete");
 const cancelDelete = document.getElementById("cancelDelete");
+const deleteDone = document.getElementById("deleteDone");
+const deleteAll = document.getElementById("deleteAll");
+const confirmAllModal = document.getElementById("confirmAllModal");
+const confirmDoneModal = document.getElementById("confirmDoneModal");
