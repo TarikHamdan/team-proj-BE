@@ -31,7 +31,24 @@ function renderTasks() {
     emptyMsg.className = "empty-message";
     emptyMsg.innerText = "No tasks.";
     taskList.appendChild(emptyMsg);
-  }
+  }else {
+    filteredTasks.forEach((task, index) => {
+      const taskItem = document.createElement("div");
+      taskItem.className = "task-item";
+
+      const taskText = document.createElement("div");
+      taskText.className = "task-text" + (task.done ? " done" : "");
+      taskText.innerText = task.text;
+
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.checked = task.done;
+      checkbox.className = "task-checkbox";
+      checkbox.addEventListener("change", () => {
+        task.done = !task.done;
+        saveTasks();
+        renderTasks();
+      });
 
 
 
