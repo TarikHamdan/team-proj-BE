@@ -56,7 +56,6 @@ function renderTasks() {
         editInput.value = task.text;
         editModal.style.display = "flex";
       });
-
       const deleteIcon = document.createElement("i");
       deleteIcon.className = "fas fa-trash";
       deleteIcon.addEventListener("click", () => {
