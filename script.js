@@ -70,8 +70,6 @@ function renderTasks() {
       taskList.appendChild(taskItem);
     });
     }
-
-
-
-
+    taskList.style.maxHeight = tasks.length > 6 ? '400px' : 'auto';
+    taskList.style.overflowY = tasks.length > 6 ? 'auto' : 'hidden';
 }
