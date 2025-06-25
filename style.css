@@ -136,3 +136,24 @@ body {
   align-items: center;
   font-size: 1em;
 }
+
+.task-item:hover {
+  background-color: #f0faff;
+}
+
+.task-text {
+  flex: 1;
+  margin-right: 40px;
+  word-break: break-word;
+  font-size: 2em;
+}
+
+.task-text.done {
+  color: #d00000;
+  text-decoration: line-through;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+}
